@@ -79,7 +79,7 @@ body {
 .action-btn {
   background-color: #fff;
   border: 0;
-  color: darkgray;
+  color: #cdc2d0;
   font-size: 20px;
   cursor: pointer;
   padding: 10px;
@@ -87,7 +87,7 @@ body {
 }
 
 .action-btn.action-btn-big {
-  color: #darkgray;
+  color: #cdc2d0;
   font-size: 30px;
 }
 
