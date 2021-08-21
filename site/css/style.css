@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css');
 
 * {
   box-sizing: border-box;
@@ -22,8 +23,13 @@ body {
   display: flex;
   padding: 20px 30px;
   position: relative;
-  margin: 75px 0;
+  margin: 75px 0 50px 0;
   z-index: 10;
+}
+
+#autoplay-label {
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
 }
 
 .img-container {
@@ -67,15 +73,15 @@ body {
 .action-btn {
   background-color: #fff;
   border: 0;
-  color: darkgray;
+  color: #cdc2d0;
   font-size: 20px;
   cursor: pointer;
   padding: 10px;
   margin: 0 20px;
-  z-index: 10;
 }
 
-.action-btn-big {
+.action-btn.action-btn-big {
+  color: #cdc2d0;
   font-size: 30px;
 }
 
