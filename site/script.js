@@ -23,7 +23,7 @@ let songIndex = songs.length - 1;
 function loadSong(song) {
     title.innerText = song;
     audio.src = `music/${song}.mp3`;
-    cover.src = `imgs/${song}.jpg`;
+    cover.src = `images/${song}.jpg`;
 }
 
 // This loads the song
