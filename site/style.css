@@ -67,15 +67,14 @@ body {
 .action-btn {
   background-color: #fff;
   border: 0;
-  color: #cdc2d0;
+  color: darkgray;
   font-size: 20px;
   cursor: pointer;
   padding: 10px;
   margin: 0 20px;
 }
 
-.action-btn.action-btn-big {
-  color: #cdc2d0;
+.action-btn-big {
   font-size: 30px;
 }
 
