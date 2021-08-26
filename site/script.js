@@ -12,14 +12,25 @@ const currTime = document.querySelector('#currTime');
 const durTime = document.querySelector('#durTime');
 
 const checkbox = document.querySelector('.checkbox');
+const list = document.getElementById('Songs');
 
 // song titles
 const songs = ['hey', 'summer', 'ukulele'];
 
-let songInedex = songs.length - 1;
-
 // default song index
 let songIndex = songs.length - 1;
+
+// display availabe songs
+songs.forEach(item => {
+    let li = document.createElement('li');
+    li.innerText = item;
+    li.addEventListener('click', () => {
+        songIndex = songs.indexOf(item);
+        loadSong(item);
+        playSong();
+    });
+    list.appendChild(li);
+});
 
 // changes the audio,title and image of song.
 function loadSong(song) {

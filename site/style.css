@@ -132,3 +132,35 @@ body {
 .checkbox {
   cursor: pointer;
 }
+
+.list-whole {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+.list-container {
+  border-style: solid;
+  border-color: #26A69A;
+  background-color: white;
+  border-radius: 50px 0 0 50px;
+  width: 400px;
+  height: 200px;
+  overflow-y: auto;
+  overflow-wrap: break-word;
+  padding: 10px 25px 10px 50px;
+}
+
+li {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+h3 {
+  position: relative;
+  left: 275px;
+}
