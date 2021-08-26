@@ -11,6 +11,8 @@ const cover = document.getElementById('cover');
 const currTime = document.querySelector('#currTime');
 const durTime = document.querySelector('#durTime');
 
+const checkbox = document.querySelector('.checkbox');
+
 // song titles
 const songs = ['hey', 'summer', 'ukulele'];
 
@@ -98,16 +100,8 @@ function setProgress(e) {
     audio.currentTime = (clickX / width) * td;
 }
 
-let ap = false;
-let val = 0;
-
-function turnAutoplayOnOff() {
-    ap = val ? false : true;
-    val = val ? 0 : 1;
-}
-
 function autoplay() {
-    if (ap == true) {
+    if (checkbox.checked) {
         nextSong();
     }
     else pauseSong();
